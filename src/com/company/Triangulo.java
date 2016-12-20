@@ -38,7 +38,7 @@ public class Triangulo {
     }
 
 
-
+//----- operaciones ------------
     public double calculaH(){
         double a = Math.pow(lado,2);
         double b = Math.pow((base/2),2);
