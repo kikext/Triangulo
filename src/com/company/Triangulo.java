@@ -41,18 +41,18 @@ public class Triangulo {
 //----- operaciones ------------
     public double calculaH(){
         double a = Math.pow(lado,2);
-        double b = Math.pow((base/2),2);
-        double altura = Math.sqrt(a-b);
+        double b = Math.pow(base,2);
+        double altura = Math.sqrt(a-(b/4));
         return altura;
     }
 
     public double calculaA(){
-        double Area = (base*calculaH()/2);
+        double Area = ((base*calculaH())/2);
         return Area;
     }
 
     public double perimetro(){
-        double perimetro = (2*lado)+base;
+        double perimetro = ((2*lado)+base);
         return perimetro;
     }
 
